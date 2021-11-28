@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="vi">
   <head>
+
+  <script>
+
+  </script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gui Nhung </title>
+    <title>Gui Nhung</title>
     <link rel="shortcut icon" href="./icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   </head>
   <body>
     <div id="drag-container">
@@ -26,7 +32,7 @@
         <img src="./img/img7.jpg" alt="" />
         <img src="./img/img8.jpg" alt="" />
 
-        <p> Nhung Lê <3 </p>
+        <p>Nhung Le <3</p>
       </div>
       <div id="ground"></div>
     </div>
@@ -35,7 +41,32 @@
     <div id="canva">
       <canvas id="canvas"></canvas>
     </div>
-    <audio src="music.mp3" autoplay controls hidden></audio>
+
+  <audio id="myAudio" autoplay style="z-index: 10;">
+      <source src="nhac.mp3" type="audio/ogg">
+      <source src="nhac.mp3" type="audio/mpeg">
+      <source src="nhac.mp3" type="audio/mp3">
+  </audio>
+
+
+  
+<script type="text/javascript">
+  $( document ).ready(function() {
+    $("body").click(function(){
+      document.getElementById("myAudio").play();
+     
+    })
+  
+
+});
+
+
+</script>
+     
+      
+  
+  
     <script src="main.js"></script>
+
   </body>
 </html>
